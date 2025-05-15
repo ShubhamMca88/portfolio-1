@@ -86,7 +86,7 @@ A modern, responsive portfolio website showcasing my DevOps engineering skills, 
    ```bash
    cd portfolio
    # Use any local server or directly open index.html
-   ```
+```
 
 ## 🎨 Customization
 
