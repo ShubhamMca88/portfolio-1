@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shubham | DevOps Engineer</title>
+  <meta name="description" content="Shubham - DevOps Engineer Portfolio - AWS, Terraform, Docker, Kubernetes, CI/CD">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=Righteous&display=swap"
+    rel="stylesheet">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: '#3B82F6',
+            secondary: '#1E293B',
+          },
+          fontFamily: {
+            poppins: ['Poppins', 'sans-serif'],
+            inter: ['Inter', 'sans-serif'],
+            righteous: ['Righteous', 'cursive'],
+          },
+        }
+      }
+    }
+  </script>
+
+  <style>
+    .brand-name {
+      font-family: 'Righteous', cursive;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="font-poppins bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-white scroll-smooth">
+  <!-- Navigation -->
+  <nav class="fixed w-full z-50 pt-6 pb-1 pt-8 transition-all duration-300" id="navbar">
+    <div class="container mx-auto px-2 max-w-5xl">
+      <div class="flex items-center justify-between py-1">
+        <a href="#home" class="brand-name text-3xl font-normal text-primary hover:text-primary/80 transition-all duration-300 hover:scale-105">
+          Shubham
+        </a>
+
+        <button class="lg:hidden p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors" aria-label="Toggle navigation" id="mobile-menu-button">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+
+        <ul class="hidden lg:flex items-center space-x-4 text-base">
+          <li>
+            <a href="#home" class="px-2 py-1 hover:text-primary transition-colors">Home</a>
+          </li>
+          <li>
+            <a href="#about" class="px-2 py-1 hover:text-primary transition-colors">About</a>
+          </li>
+          <li>
+            <a href="#experience" class="px-2 py-1 hover:text-primary transition-colors">Experience</a>
+          </li>
+          <li>
+            <a href="#skills" class="px-2 py-1 hover:text-primary transition-colors">Skills</a>
+          </li>
+          <li>
+            <a href="#projects" class="px-2 py-1 hover:text-primary transition-colors">Projects</a>
+          </li>
+          <li>
+            <a href="#contact" class="px-2 py-1 hover:text-primary transition-colors">Contact</a>
+          </li>
+        </ul>
+
+        <button id="theme-toggle" class="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors hidden lg:block" aria-label="Toggle theme">
+          <i class="fas fa-sun text-yellow-500 dark:hidden"></i>
+          <i class="fas fa-moon text-blue-500 hidden dark:block"></i>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div class="lg:hidden">
+        <ul id="mobile-menu" class="hidden py-2 space-y-2">
+          <li>
+            <a href="#home" class="block px-2 py-1 hover:text-primary transition-colors">Home</a>
+          </li>
+          <li>
+            <a href="#about" class="block px-2 py-1 hover:text-primary transition-colors">About</a>
+          </li>
+          <li>
+            <a href="#experience" class="block px-2 py-1 hover:text-primary transition-colors">Experience</a>
+          </li>
+          <li>
+            <a href="#skills" class="block px-2 py-1 hover:text-primary transition-colors">Skills</a>
+          </li>
+          <li>
+            <a href="#projects" class="block px-2 py-1 hover:text-primary transition-colors">Projects</a>
+          </li>
+          <li>
+            <a href="#contact" class="block px-2 py-1 hover:text-primary transition-colors">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="min-h-screen flex items-center bg-gradient-to-br from-blue-50 via-white to-blue-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
+    <div class="container mx-auto px-4 max-w-6xl">
+      <div class="grid lg:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
+        <div class="relative">
+          <div class="relative w-64 h-64 md:w-80 md:h-80 mx-auto">
+            <!-- Curved background shape -->
+            <div class="absolute inset-0 bg-primary/90 rounded-[50%] scale-125 translate-x-4"></div>
+            <!-- Dots pattern -->
+            <div class="absolute -right-8 -top-8 w-24 h-24 grid grid-cols-3 gap-2">
+              <div class="w-2 h-2 bg-gray-200/30 rounded-full"></div>
+              <div class="w-2 h-2 bg-gray-200/30 rounded-full"></div>
+              <div class="w-2 h-2 bg-gray-200/30 rounded-full"></div>
+              <div class="w-2 h-2 bg-gray-200/30 rounded-full"></div>
+              <div class="w-2 h-2 bg-gray-200/30 rounded-full"></div>
+              <div class="w-2 h-2 bg-gray-200/30 rounded-full"></div>
+              <div class="w-2 h-2 bg-gray-200/30 rounded-full"></div>
+              <div class="w-2 h-2 bg-gray-200/30 rounded-full"></div>
+              <div class="w-2 h-2 bg-gray-200/30 rounded-full"></div>
+            </div>
+            <!-- Navy accent shape -->
+            <div class="absolute -bottom-4 -left-4 w-32 h-32 bg-secondary/90 rounded-[40%] -rotate-12"></div>
+            <!-- Profile image -->
+            <img src="assets/img/profile/1.png" alt="Shubham - DevOps Engineer"
+              class="relative rounded-full w-full h-full object-cover shadow-xl">
+          </div>
+          <div
+            class="absolute top-0 right-0 bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-4 transform rotate-12 hover:rotate-0 transition-transform duration-300">
+            <span class="text-3xl font-bold text-primary">2+</span>
+            <span class="block text-sm">Years<br>Experience</span>
+          </div>
+        </div>
+        <div class="space-y-6">
+          <h1 class="text-5xl font-bold bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">Hi, I'm
+            Shubham</h1>
+          <h2 class="text-2xl font-semibold text-gray-700 dark:text-gray-300">DevOps Engineer | Cloud Infrastructure |
+            AWS & Terraform Expert</h2>
+          <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
+            I'm a DevOps Engineer with 2 years of hands-on experience building scalable, secure, and automated cloud
+            infrastructure. I specialize in Infrastructure as Code (IaC) using Terraform, CI/CD pipeline development,
+            and container orchestration with Docker and Kubernetes.
+          </p>
+          <p class="text-lg font-medium text-primary">Let's build faster, smarter, and more reliable systems—together.
+          </p>
+          <div class="flex space-x-4">
+            <a href="#projects"
+              class="px-6 py-3 bg-primary hover:bg-primary/90 text-white rounded-lg transition-colors shadow-lg hover:shadow-primary/20">
+              View Projects
+            </a>
+            <a href="#contact"
+              class="px-6 py-3 border-2 border-primary text-primary hover:bg-primary hover:text-white rounded-lg transition-all">
+              Contact Me
+            </a>
+          </div>
+          <div class="flex space-x-6 text-2xl text-gray-600 dark:text-gray-400">
+            <a href="https://github.com/ShubhamMca88" target="_blank" class="hover:text-primary transition-colors"><i
+                class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/shubhammca88" target="_blank"
+              class="hover:text-primary transition-colors"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:byshubham6@gmail.com" class="hover:text-primary transition-colors"><i
+                class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="min-h-screen flex items-center bg-gradient-to-bl from-blue-50 via-white to-blue-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
+    <div class="container mx-auto px-4 max-w-6xl">
+      <h2 class="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">About Me</h2>
+      <div class="grid lg:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
+        <div class="relative">
+          <div class="relative w-64 h-64 md:w-80 md:h-80 mx-auto group">
+            <!-- Curved background shape -->
+            <div class="absolute inset-0 bg-primary/90 rounded-[50%] scale-125 translate-x-4"></div>
+            <!-- Dots pattern -->
+            <div class="absolute -right-8 -top-8 w-24 h-24 grid grid-cols-3 gap-2">
+              <div class="w-2 h-2 bg-gray-200/30 rounded-full"></div>
+              <div class="w-2 h-2 bg-gray-200/30 rounded-full"></div>
+              <div class="w-2 h-2 bg-gray-200/30 rounded-full"></div>
+              <div class="w-2 h-2 bg-gray-200/30 rounded-full"></div>
+              <div class="w-2 h-2 bg-gray-200/30 rounded-full"></div>
+              <div class="w-2 h-2 bg-gray-200/30 rounded-full"></div>
+              <div class="w-2 h-2 bg-gray-200/30 rounded-full"></div>
+              <div class="w-2 h-2 bg-gray-200/30 rounded-full"></div>
+              <div class="w-2 h-2 bg-gray-200/30 rounded-full"></div>
+            </div>
+            <!-- Navy accent shape -->
+            <div class="absolute -bottom-4 -left-4 w-32 h-32 bg-secondary/90 rounded-[40%] -rotate-12"></div>
+            <!-- Profile image -->
+            <img src="assets/img/profile/1.png" alt="Shubham - DevOps Engineer" 
+              class="relative rounded-full w-full h-full object-cover shadow-xl transition-transform duration-500 group-hover:scale-105">
+          </div>
+        </div>
+        <div class="space-y-6">
+          <h3 class="text-2xl font-bold text-primary">Professional Overview</h3>
+          <p class="text-xl text-gray-600 dark:text-gray-300 leading-relaxed">
+            As a DevOps Engineer with 2+ years of experience, I specialize in building and maintaining scalable cloud infrastructure. My expertise spans across:
+          </p>
+          <ul class="space-y-3 text-gray-600 dark:text-gray-300">
+            <li class="flex items-center space-x-3">
+              <i class="fas fa-check-circle text-primary"></i>
+              <span>Cloud Infrastructure Design & Implementation</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <i class="fas fa-check-circle text-primary"></i>
+              <span>CI/CD Pipeline Development</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <i class="fas fa-check-circle text-primary"></i>
+              <span>Infrastructure as Code (Terraform)</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <i class="fas fa-check-circle text-primary"></i>
+              <span>Container Orchestration (Docker & Kubernetes)</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <i class="fas fa-check-circle text-primary"></i>
+              <span>Monitoring & Performance Optimization</span>
+            </li>
+          </ul>
+          <div class="pt-4">
+            <a href="#contact" class="inline-flex items-center space-x-2 text-primary hover:text-primary/80 transition-colors">
+              <span>Let's Connect</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="min-h-screen flex items-center bg-gradient-to-tr from-blue-50 via-white to-blue-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
+    <div class="container mx-auto px-4 max-w-6xl">
+      <h2 class="text-4xl font-bold text-center bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent mb-12">Professional Experience</h2>
+      <div class="max-w-4xl mx-auto space-y-12">
+        <!-- Experience Item 1 -->
+        <div class="relative pl-8 md:pl-0">
+          <div class="md:grid md:grid-cols-5 md:gap-8">
+            <div class="md:col-span-2">
+              <div class="flex items-center space-x-4 mb-4 md:mb-0">
+                <div class="w-16 h-16 bg-white dark:bg-gray-800 rounded-lg shadow-lg flex items-center justify-center">
+                  <i class="fas fa-building text-3xl text-primary"></i>
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold">DevOps Engineer</h3>
+                  <p class="text-gray-600 dark:text-gray-400">Company Name</p>
+                  <p class="text-sm text-primary">2022 - Present</p>
+                </div>
+              </div>
+            </div>
+            <div class="md:col-span-3">
+              <ul class="space-y-4 text-gray-600 dark:text-gray-300">
+                <li class="flex items-start space-x-3">
+                  <i class="fas fa-caret-right text-primary mt-1.5"></i>
+                  <span>Designed and implemented CI/CD pipelines using Jenkins, reducing deployment time by 60%</span>
+                </li>
+                <li class="flex items-start space-x-3">
+                  <i class="fas fa-caret-right text-primary mt-1.5"></i>
+                  <span>Managed AWS infrastructure using Terraform, implementing Infrastructure as Code practices</span>
+                </li>
+                <li class="flex items-start space-x-3">
+                  <i class="fas fa-caret-right text-primary mt-1.5"></i>
+                  <span>Orchestrated containerized applications using Kubernetes, improving scalability and reliability</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experience Item 2 -->
+        <div class="relative pl-8 md:pl-0">
+          <div class="md:grid md:grid-cols-5 md:gap-8">
+            <div class="md:col-span-2">
+              <div class="flex items-center space-x-4 mb-4 md:mb-0">
+                <div class="w-16 h-16 bg-white dark:bg-gray-800 rounded-lg shadow-lg flex items-center justify-center">
+                  <i class="fas fa-laptop-code text-3xl text-primary"></i>
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold">Cloud Engineer</h3>
+                  <p class="text-gray-600 dark:text-gray-400">Previous Company</p>
+                  <p class="text-sm text-primary">2021 - 2022</p>
+                </div>
+              </div>
+            </div>
+            <div class="md:col-span-3">
+              <ul class="space-y-4 text-gray-600 dark:text-gray-300">
+                <li class="flex items-start space-x-3">
+                  <i class="fas fa-caret-right text-primary mt-1.5"></i>
+                  <span>Implemented monitoring solutions using Prometheus and Grafana</span>
+                </li>
+                <li class="flex items-start space-x-3">
+                  <i class="fas fa-caret-right text-primary mt-1.5"></i>
+                  <span>Automated cloud infrastructure deployment and management</span>
+                </li>
+                <li class="flex items-start space-x-3">
+                  <i class="fas fa-caret-right text-primary mt-1.5"></i>
+                  <span>Developed and maintained disaster recovery procedures</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certifications -->
+        <div class="pt-12">
+          <h3 class="text-2xl font-bold text-center mb-8">Certifications</h3>
+          <div class="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+            <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+              <div class="flex items-center space-x-4">
+                <div class="p-3 bg-blue-50 dark:bg-gray-700 rounded-lg">
+                  <i class="fab fa-aws text-3xl text-primary"></i>
+                </div>
+                <div>
+                  <h4 class="text-lg font-semibold">AWS Certified Solutions Architect</h4>
+                  <p class="text-gray-600 dark:text-gray-400">Associate Level</p>
+                </div>
+              </div>
+            </div>
+            <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+              <div class="flex items-center space-x-4">
+                <div class="p-3 bg-blue-50 dark:bg-gray-700 rounded-lg">
+                  <i class="fas fa-cloud text-3xl text-primary"></i>
+                </div>
+                <div>
+                  <h4 class="text-lg font-semibold">HashiCorp Certified: Terraform Associate</h4>
+                  <p class="text-gray-600 dark:text-gray-400">Infrastructure as Code</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="best-skills" class="min-h-screen flex items-center bg-gradient-to-tl from-blue-50 via-white to-blue-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
+    <div class="container mx-auto px-4 max-w-6xl">
+      <h2
+        class="text-4xl font-bold text-center bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">
+        Skills</h2>
+      <p class="text-xl text-center text-gray-600 dark:text-gray-400 mt-4 mb-12">My Top Areas of Expertise</p>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <!-- AWS Cloud -->
+        <div class="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <div class="flex items-center space-x-4 mb-4">
+            <div class="p-3 bg-blue-50 dark:bg-gray-700 rounded-lg">
+              <i class="fab fa-aws text-3xl text-primary"></i>
+            </div>
+            <h3 class="text-xl font-semibold">AWS Services</h3>
+          </div>
+          <div class="space-y-3">
+            <div class="flex items-center justify-between">
+              <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2.5 mr-2">
+                <div class="bg-primary h-2.5 rounded-full transition-all duration-500" style="width: 90%"></div>
+              </div>
+              <span class="text-sm font-medium text-primary">90%</span>
+            </div>
+            <p class="text-gray-600 dark:text-gray-400">Expert in EC2, VPC, S3, RDS, Lambda, CloudWatch, and other AWS
+              services</p>
+          </div>
+        </div>
+
+        <!-- Docker -->
+        <div class="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <div class="flex items-center space-x-4 mb-4">
+            <div class="p-3 bg-blue-50 dark:bg-gray-700 rounded-lg">
+              <i class="fab fa-docker text-3xl text-primary"></i>
+            </div>
+            <h3 class="text-xl font-semibold">Docker</h3>
+          </div>
+          <div class="space-y-3">
+            <div class="flex items-center justify-between">
+              <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2.5 mr-2">
+                <div class="bg-primary h-2.5 rounded-full transition-all duration-500" style="width: 88%"></div>
+              </div>
+              <span class="text-sm font-medium text-primary">88%</span>
+            </div>
+            <p class="text-gray-600 dark:text-gray-400">Containerization, Docker Compose, image optimization, and
+              container security</p>
+          </div>
+        </div>
+
+        <!-- Jenkins & CI/CD -->
+        <div class="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <div class="flex items-center space-x-4 mb-4">
+            <div class="p-3 bg-blue-50 dark:bg-gray-700 rounded-lg">
+              <i class="fab fa-jenkins text-3xl text-primary"></i>
+            </div>
+            <h3 class="text-xl font-semibold">Jenkins & CI/CD</h3>
+          </div>
+          <div class="space-y-3">
+            <div class="flex items-center justify-between">
+              <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2.5 mr-2">
+                <div class="bg-primary h-2.5 rounded-full transition-all duration-500" style="width: 88%"></div>
+              </div>
+              <span class="text-sm font-medium text-primary">88%</span>
+            </div>
+            <p class="text-gray-600 dark:text-gray-400">Pipeline automation, build management, and continuous deployment
+            </p>
+          </div>
+        </div>
+
+        <!-- Terraform -->
+        <div class="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <div class="flex items-center space-x-4 mb-4">
+            <div class="p-3 bg-blue-50 dark:bg-gray-700 rounded-lg">
+              <i class="fas fa-code-branch text-3xl text-primary"></i>
+            </div>
+            <h3 class="text-xl font-semibold">Terraform</h3>
+          </div>
+          <div class="space-y-3">
+            <div class="flex items-center justify-between">
+              <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2.5 mr-2">
+                <div class="bg-primary h-2.5 rounded-full transition-all duration-500" style="width: 85%"></div>
+              </div>
+              <span class="text-sm font-medium text-primary">85%</span>
+            </div>
+            <p class="text-gray-600 dark:text-gray-400">Infrastructure as Code (IaC), state management, and multi-cloud
+              provisioning</p>
+          </div>
+        </div>
+
+        <!-- Kubernetes -->
+        <div class="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <div class="flex items-center space-x-4 mb-4">
+            <div class="p-3 bg-blue-50 dark:bg-gray-700 rounded-lg">
+              <i class="fas fa-dharmachakra text-3xl text-primary"></i>
+            </div>
+            <h3 class="text-xl font-semibold">Kubernetes</h3>
+          </div>
+          <div class="space-y-3">
+            <div class="flex items-center justify-between">
+              <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2.5 mr-2">
+                <div class="bg-primary h-2.5 rounded-full transition-all duration-500" style="width: 82%"></div>
+              </div>
+              <span class="text-sm font-medium text-primary">82%</span>
+            </div>
+            <p class="text-gray-600 dark:text-gray-400">Container orchestration, cluster management, and deployment
+              strategies</p>
+          </div>
+        </div>
+
+        <!-- Shell Scripting -->
+        <div class="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <div class="flex items-center space-x-4 mb-4">
+            <div class="p-3 bg-blue-50 dark:bg-gray-700 rounded-lg">
+              <i class="fas fa-terminal text-3xl text-primary"></i>
+            </div>
+            <h3 class="text-xl font-semibold">Shell Scripting</h3>
+          </div>
+          <div class="space-y-3">
+            <div class="flex items-center justify-between">
+              <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2.5 mr-2">
+                <div class="bg-primary h-2.5 rounded-full transition-all duration-500" style="width: 88%"></div>
+              </div>
+              <span class="text-sm font-medium text-primary">88%</span>
+            </div>
+            <p class="text-gray-600 dark:text-gray-400">Automation scripts, task optimization, and system administration
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="min-h-screen flex items-center bg-gradient-to-br from-blue-50 via-white to-blue-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
+    <div class="container mx-auto px-4 max-w-6xl">
+      <h2
+        class="text-4xl font-bold text-center bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent mb-12">
+        Projects</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <!-- AWS Terraform Project -->
+        <div class="bg-white dark:bg-gray-900 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 group">
+          <div class="relative overflow-hidden rounded-t-2xl">
+            <img src="assets/img/projects/aws-terraform.png" alt="AWS Terraform Project" class="w-full h-48 object-cover transform group-hover:scale-110 transition-transform duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          </div>
+          <div class="p-6 space-y-4">
+            <h3 class="text-xl font-semibold">AWS Infrastructure with Terraform</h3>
+            <p class="text-gray-600 dark:text-gray-400">
+              Comprehensive AWS infrastructure deployment using Terraform, featuring VPC setup, auto-scaling EC2 instances, RDS databases, and S3 storage with proper security configurations.
+            </p>
+            <div class="space-y-3">
+              <h4 class="font-medium text-primary">Key Features:</h4>
+              <ul class="text-sm text-gray-600 dark:text-gray-400 space-y-2">
+                <li class="flex items-start space-x-2">
+                  <i class="fas fa-check text-primary mt-1"></i>
+                  <span>Multi-environment infrastructure (Dev, Staging, Prod)</span>
+                </li>
+                <li class="flex items-start space-x-2">
+                  <i class="fas fa-check text-primary mt-1"></i>
+                  <span>Auto-scaling groups with custom metrics</span>
+                </li>
+                <li class="flex items-start space-x-2">
+                  <i class="fas fa-check text-primary mt-1"></i>
+                  <span>Automated backup and disaster recovery</span>
+                </li>
+              </ul>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-primary rounded-full text-sm">Terraform</span>
+              <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-primary rounded-full text-sm">AWS</span>
+              <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-primary rounded-full text-sm">IaC</span>
+              <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-primary rounded-full text-sm">CloudWatch</span>
+            </div>
+            <div class="flex space-x-4 pt-4">
+              <a href="https://github.com/ShubhamMca88/aws-terraform-infrastructure" target="_blank" class="flex items-center space-x-2 text-primary hover:text-primary/80 transition-colors">
+                <i class="fab fa-github"></i>
+                <span>View Code</span>
+              </a>
+              <button data-modal="aws-terraform-details" class="flex items-center space-x-2 text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">
+                <i class="fas fa-info-circle"></i>
+                <span>Details</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kubernetes Deployment Project -->
+        <div class="bg-white dark:bg-gray-900 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 group">
+          <div class="relative overflow-hidden rounded-t-2xl">
+            <img src="assets/img/projects/kubernetes.png" alt="Kubernetes Deployment Project" class="w-full h-48 object-cover transform group-hover:scale-110 transition-transform duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          </div>
+          <div class="p-6 space-y-4">
+            <h3 class="text-xl font-semibold">Kubernetes Microservices Platform</h3>
+            <p class="text-gray-600 dark:text-gray-400">
+              Advanced microservices architecture deployed on Kubernetes with service mesh, monitoring, and automated scaling capabilities.
+            </p>
+            <div class="space-y-3">
+              <h4 class="font-medium text-primary">Key Features:</h4>
+              <ul class="text-sm text-gray-600 dark:text-gray-400 space-y-2">
+                <li class="flex items-start space-x-2">
+                  <i class="fas fa-check text-primary mt-1"></i>
+                  <span>Istio service mesh integration</span>
+                </li>
+                <li class="flex items-start space-x-2">
+                  <i class="fas fa-check text-primary mt-1"></i>
+                  <span>Prometheus & Grafana monitoring</span>
+                </li>
+                <li class="flex items-start space-x-2">
+                  <i class="fas fa-check text-primary mt-1"></i>
+                  <span>Automated canary deployments</span>
+                </li>
+              </ul>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-primary rounded-full text-sm">Kubernetes</span>
+              <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-primary rounded-full text-sm">Docker</span>
+              <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-primary rounded-full text-sm">Istio</span>
+              <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-primary rounded-full text-sm">Monitoring</span>
+            </div>
+            <div class="flex space-x-4 pt-4">
+              <a href="https://github.com/ShubhamMca88/k8s-microservices" target="_blank" class="flex items-center space-x-2 text-primary hover:text-primary/80 transition-colors">
+                <i class="fab fa-github"></i>
+                <span>View Code</span>
+              </a>
+              <button data-modal="k8s-details" class="flex items-center space-x-2 text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">
+                <i class="fas fa-info-circle"></i>
+                <span>Details</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- CI/CD Pipeline Project -->
+        <div class="bg-white dark:bg-gray-900 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 group">
+          <div class="relative overflow-hidden rounded-t-2xl">
+            <img src="assets/img/projects/cicd.png" alt="CI/CD Pipeline Project" class="w-full h-48 object-cover transform group-hover:scale-110 transition-transform duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          </div>
+          <div class="p-6 space-y-4">
+            <h3 class="text-xl font-semibold">Advanced CI/CD Pipeline</h3>
+            <p class="text-gray-600 dark:text-gray-400">
+              Sophisticated CI/CD pipeline with automated testing, security scanning, and multi-environment deployments using Jenkins and AWS.
+            </p>
+            <div class="space-y-3">
+              <h4 class="font-medium text-primary">Key Features:</h4>
+              <ul class="text-sm text-gray-600 dark:text-gray-400 space-y-2">
+                <li class="flex items-start space-x-2">
+                  <i class="fas fa-check text-primary mt-1"></i>
+                  <span>Automated unit and integration testing</span>
+                </li>
+                <li class="flex items-start space-x-2">
+                  <i class="fas fa-check text-primary mt-1"></i>
+                  <span>Security and vulnerability scanning</span>
+                </li>
+                <li class="flex items-start space-x-2">
+                  <i class="fas fa-check text-primary mt-1"></i>
+                  <span>Blue-green deployment strategy</span>
+                </li>
+              </ul>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-primary rounded-full text-sm">Jenkins</span>
+              <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-primary rounded-full text-sm">AWS</span>
+              <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-primary rounded-full text-sm">Docker</span>
+              <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-primary rounded-full text-sm">Security</span>
+            </div>
+            <div class="flex space-x-4 pt-4">
+              <a href="https://github.com/ShubhamMca88/cicd-pipeline" target="_blank" class="flex items-center space-x-2 text-primary hover:text-primary/80 transition-colors">
+                <i class="fab fa-github"></i>
+                <span>View Code</span>
+              </a>
+              <button data-modal="cicd-details" class="flex items-center space-x-2 text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">
+                <i class="fas fa-info-circle"></i>
+                <span>Details</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cloud Monitoring Project -->
+        <div class="bg-white dark:bg-gray-900 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 group">
+          <div class="relative overflow-hidden rounded-t-2xl">
+            <img src="assets/img/projects/monitoring.png" alt="Cloud Monitoring Project"
+              class="w-full h-48 object-cover transform group-hover:scale-110 transition-transform duration-500">
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            </div>
+          </div>
+          <div class="p-6 space-y-4">
+            <h3 class="text-xl font-semibold">Cloud Monitoring System</h3>
+            <p class="text-gray-600 dark:text-gray-400">
+              Comprehensive monitoring solution using Prometheus, Grafana, and ELK stack for cloud infrastructure.
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-primary rounded-full text-sm">Prometheus</span>
+              <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-primary rounded-full text-sm">Grafana</span>
+              <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-primary rounded-full text-sm">ELK</span>
+            </div>
+            <div class="flex space-x-4 pt-4">
+              <a href="https://github.com/ShubhamMca88/cloud-monitoring" target="_blank"
+                class="flex items-center space-x-2 text-primary hover:text-primary/80 transition-colors">
+                <i class="fab fa-github"></i>
+                <span>View Code</span>
+              </a>
+              <button data-modal="monitoring-details"
+                class="flex items-center space-x-2 text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">
+                <i class="fas fa-info-circle"></i>
+                <span>Details</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Security Automation Project -->
+        <div class="bg-white dark:bg-gray-900 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 group">
+          <div class="relative overflow-hidden rounded-t-2xl">
+            <img src="assets/img/projects/security.png" alt="Security Automation Project"
+              class="w-full h-48 object-cover transform group-hover:scale-110 transition-transform duration-500">
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            </div>
+          </div>
+          <div class="p-6 space-y-4">
+            <h3 class="text-xl font-semibold">Security Automation</h3>
+            <p class="text-gray-600 dark:text-gray-400">
+              Automated security scanning and compliance checking for cloud infrastructure using various tools.
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-primary rounded-full text-sm">Python</span>
+              <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-primary rounded-full text-sm">AWS</span>
+              <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-primary rounded-full text-sm">Security</span>
+            </div>
+            <div class="flex space-x-4 pt-4">
+              <a href="https://github.com/ShubhamMca88/security-automation" target="_blank"
+                class="flex items-center space-x-2 text-primary hover:text-primary/80 transition-colors">
+                <i class="fab fa-github"></i>
+                <span>View Code</span>
+              </a>
+              <button data-modal="security-details"
+                class="flex items-center space-x-2 text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">
+                <i class="fas fa-info-circle"></i>
+                <span>Details</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Infrastructure Scaling Project -->
+        <div class="bg-white dark:bg-gray-900 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 group">
+          <div class="relative overflow-hidden rounded-t-2xl">
+            <img src="assets/img/projects/scaling.png" alt="Infrastructure Scaling Project"
+              class="w-full h-48 object-cover transform group-hover:scale-110 transition-transform duration-500">
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            </div>
+          </div>
+          <div class="p-6 space-y-4">
+            <h3 class="text-xl font-semibold">Auto-Scaling Infrastructure</h3>
+            <p class="text-gray-600 dark:text-gray-400">
+              Automated scaling solution for cloud infrastructure using AWS Auto Scaling and custom metrics.
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-primary rounded-full text-sm">AWS</span>
+              <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-primary rounded-full text-sm">Python</span>
+              <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-primary rounded-full text-sm">Scaling</span>
+            </div>
+            <div class="flex space-x-4 pt-4">
+              <a href="https://github.com/ShubhamMca88/auto-scaling" target="_blank"
+                class="flex items-center space-x-2 text-primary hover:text-primary/80 transition-colors">
+                <i class="fab fa-github"></i>
+                <span>View Code</span>
+              </a>
+              <button data-modal="scaling-details"
+                class="flex items-center space-x-2 text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">
+                <i class="fas fa-info-circle"></i>
+                <span>Details</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project Modals -->
+    <div id="aws-terraform-details" class="fixed inset-0 z-50 overflow-y-auto hidden">
+      <div class="min-h-screen px-4 text-center">
+        <div class="fixed inset-0 bg-black/50 transition-opacity"></div>
+        <div
+          class="inline-block w-full max-w-2xl my-8 p-6 overflow-hidden text-left align-middle bg-white dark:bg-gray-900 rounded-2xl shadow-xl transform transition-all">
+          <div class="absolute top-4 right-4">
+            <button class="close text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200">
+              <i class="fas fa-times text-xl"></i>
+            </button>
+          </div>
+          <h2 class="text-2xl font-bold mb-6">AWS Infrastructure with Terraform</h2>
+          <div class="space-y-6">
+            <div>
+              <h3 class="text-xl font-semibold mb-2">Project Overview</h3>
+              <p class="text-gray-600 dark:text-gray-400">
+                This project demonstrates the implementation of Infrastructure as Code (IaC) using Terraform to
+                provision
+                and manage AWS resources in a scalable and maintainable way.
+              </p>
+            </div>
+
+            <div>
+              <h3 class="text-xl font-semibold mb-2">Key Features</h3>
+              <ul class="list-disc list-inside space-y-2 text-gray-600 dark:text-gray-400">
+                <li>VPC setup with public and private subnets</li>
+                <li>Auto Scaling EC2 instances with custom AMI</li>
+                <li>RDS database in private subnet</li>
+                <li>S3 bucket for static assets</li>
+                <li>Security groups and IAM roles</li>
+                <li>CloudWatch monitoring and alerts</li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 class="text-xl font-semibold mb-2">Technical Details</h3>
+              <p class="text-gray-600 dark:text-gray-400 mb-2">The infrastructure is defined using Terraform modules for
+                better code organization and reusability:</p>
+              <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded-lg overflow-x-auto"><code>
+project/
+├── modules/
+│   ├── vpc/
+│   ├── ec2/
+│   ├── rds/
+│   └── s3/
+├── environments/
+│   ├── dev/
+│   ├── staging/
+│   └── prod/
+├── variables.tf
+├── outputs.tf
+└── main.tf
+              </code></pre>
+            </div>
+
+            <div>
+              <h3 class="text-xl font-semibold mb-2">Implementation</h3>
+              <p class="text-gray-600 dark:text-gray-400">
+                The infrastructure is deployed using Terraform workspaces for different environments. State files are
+                stored
+                in an S3 backend with DynamoDB for state locking.
+              </p>
+            </div>
+
+            <div class="flex justify-end mt-6">
+              <a href="https://github.com/ShubhamMca88/aws-terraform-infrastructure" target="_blank"
+                class="inline-flex items-center space-x-2 px-6 py-3 bg-primary hover:bg-primary/90 text-white rounded-lg transition-colors">
+                <i class="fab fa-github"></i>
+                <span>View on GitHub</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="k8s-details" class="fixed inset-0 z-50 overflow-y-auto hidden">
+      <div class="min-h-screen px-4 text-center">
+        <div class="fixed inset-0 bg-black/50 transition-opacity"></div>
+        <div
+          class="inline-block w-full max-w-2xl my-8 p-6 overflow-hidden text-left align-middle bg-white dark:bg-gray-900 rounded-2xl shadow-xl transform transition-all">
+          <div class="absolute top-4 right-4">
+            <button class="close text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200">
+              <i class="fas fa-times text-xl"></i>
+            </button>
+          </div>
+          <h2 class="text-2xl font-bold mb-6">Kubernetes Microservices</h2>
+          <div class="space-y-6">
+            <div>
+              <h3 class="text-xl font-semibold mb-2">Project Overview</h3>
+              <p class="text-gray-600 dark:text-gray-400">
+                A complete microservices deployment solution using Kubernetes, featuring automated scaling, monitoring,
+                and
+                service mesh integration.
+              </p>
+            </div>
+
+            <div>
+              <h3 class="text-xl font-semibold mb-2">Key Features</h3>
+              <ul class="list-disc list-inside space-y-2 text-gray-600 dark:text-gray-400">
+                <li>Microservices architecture with service mesh</li>
+                <li>Automated deployment pipelines</li>
+                <li>Horizontal Pod Autoscaling</li>
+                <li>Service discovery and load balancing</li>
+                <li>Monitoring and logging integration</li>
+                <li>Zero-downtime deployments</li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 class="text-xl font-semibold mb-2">Technologies Used</h3>
+              <ul class="list-disc list-inside space-y-2 text-gray-600 dark:text-gray-400">
+                <li>Kubernetes</li>
+                <li>Docker</li>
+                <li>Istio</li>
+                <li>Prometheus & Grafana</li>
+                <li>ELK Stack</li>
+                <li>GitHub Actions</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="min-h-screen flex items-center bg-gradient-to-bl from-blue-50 via-white to-blue-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
+    <div class="container mx-auto px-4 max-w-6xl">
+      <h2
+        class="text-4xl font-bold text-center bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent mb-12">
+        Contact Me</h2>
+      <div class="grid lg:grid-cols-2 gap-12 max-w-4xl mx-auto">
+        <div class="space-y-8">
+          <div class="flex items-center space-x-4 group">
+            <div class="p-4 bg-white dark:bg-gray-800 rounded-xl shadow-lg group-hover:shadow-xl transition-shadow">
+              <i class="fas fa-envelope text-2xl text-primary"></i>
+            </div>
+            <div>
+              <p class="text-lg font-medium">Email</p>
+              <p class="text-gray-600 dark:text-gray-400">byshubham6@gmail.com</p>
+            </div>
+          </div>
+          <div class="flex items-center space-x-4 group">
+            <div class="p-4 bg-white dark:bg-gray-800 rounded-xl shadow-lg group-hover:shadow-xl transition-shadow">
+              <i class="fas fa-phone text-2xl text-primary"></i>
+            </div>
+            <div>
+              <p class="text-lg font-medium">Phone</p>
+              <p class="text-gray-600 dark:text-gray-400">+91 8865969757</p>
+            </div>
+          </div>
+          <div class="flex items-center space-x-4 group">
+            <div class="p-4 bg-white dark:bg-gray-800 rounded-xl shadow-lg group-hover:shadow-xl transition-shadow">
+              <i class="fas fa-map-marker-alt text-2xl text-primary"></i>
+            </div>
+            <div>
+              <p class="text-lg font-medium">Location</p>
+              <p class="text-gray-600 dark:text-gray-400">Meerut, UP, India</p>
+            </div>
+          </div>
+        </div>
+        <form id="contact-form" class="space-y-6">
+          <div>
+            <input type="text" placeholder="Name" required
+              class="w-full px-4 py-3 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all">
+          </div>
+          <div>
+            <input type="email" placeholder="Email" required
+              class="w-full px-4 py-3 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all">
+          </div>
+          <div>
+            <textarea placeholder="Message" required rows="5"
+              class="w-full px-4 py-3 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all resize-none"></textarea>
+          </div>
+          <button type="submit"
+            class="w-full px-6 py-3 bg-primary hover:bg-primary/90 text-white rounded-lg transition-colors shadow-lg hover:shadow-primary/20">
+            Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-8 bg-gradient-to-b from-blue-50 to-white dark:from-gray-900 dark:to-gray-800 border-t border-gray-200 dark:border-gray-700">
+    <div class="container mx-auto px-4 max-w-6xl">
+      <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+        <p class="text-gray-600 dark:text-gray-400">&copy; 2024 Shubham. All rights reserved.</p>
+        <div class="flex space-x-6 text-xl text-gray-600 dark:text-gray-400">
+          <a href="https://github.com/ShubhamMca88" target="_blank" class="hover:text-primary transition-colors">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://linkedin.com/in/shubhammca88" target="_blank" class="hover:text-primary transition-colors">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    // Theme Toggle
+    const themeToggle = document.getElementById('theme-toggle');
+    const html = document.documentElement;
+    const navbar = document.getElementById('navbar');
+    
+    // Check for saved theme preference, otherwise use system preference
+    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      html.classList.add('dark');
+    } else {
+      html.classList.remove('dark');
+    }
+
+    // Handle navbar background on scroll
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        navbar.classList.add('bg-white/80', 'dark:bg-gray-900/80', 'backdrop-blur-lg', 'border-b', 'border-gray-200', 'dark:border-gray-800');
+      } else {
+        navbar.classList.remove('bg-white/80', 'dark:bg-gray-900/80', 'backdrop-blur-lg', 'border-b', 'border-gray-200', 'dark:border-gray-800');
+      }
+    });
+
+    // Toggle theme
+    themeToggle.addEventListener('click', () => {
+      html.classList.toggle('dark');
+      
+      // Save preference
+      if (html.classList.contains('dark')) {
+        localStorage.theme = 'dark';
+      } else {
+        localStorage.theme = 'light';
+      }
+    });
+
+    // Mobile Menu Toggle
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    mobileMenuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Close mobile menu when clicking outside
+    document.addEventListener('click', (e) => {
+      if (!mobileMenuButton.contains(e.target) && !mobileMenu.contains(e.target)) {
+        mobileMenu.classList.add('hidden');
+      }
+    });
+
+    // Close mobile menu when clicking a link
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+      });
+    });
+  </script>
+</body>
+
+</html>
