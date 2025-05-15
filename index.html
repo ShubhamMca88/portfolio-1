@@ -41,6 +41,17 @@
       font-family: 'Righteous', cursive;
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
     }
+
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .overflow-x-auto::-webkit-scrollbar {
+      display: none;
+    }
+    
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .overflow-x-auto {
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;  /* Firefox */
+    }
   </style>
 
   <!-- Font Awesome -->
@@ -91,26 +102,30 @@
 
       <!-- Mobile Menu -->
       <div class="lg:hidden">
-        <ul id="mobile-menu" class="hidden py-2 space-y-2">
-          <li>
-            <a href="#home" class="block px-2 py-1 hover:text-primary transition-colors">Home</a>
-          </li>
-          <li>
-            <a href="#about" class="block px-2 py-1 hover:text-primary transition-colors">About</a>
-          </li>
-          <li>
-            <a href="#experience" class="block px-2 py-1 hover:text-primary transition-colors">Experience</a>
-          </li>
-          <li>
-            <a href="#skills" class="block px-2 py-1 hover:text-primary transition-colors">Skills</a>
-          </li>
-          <li>
-            <a href="#projects" class="block px-2 py-1 hover:text-primary transition-colors">Projects</a>
-          </li>
-          <li>
-            <a href="#contact" class="block px-2 py-1 hover:text-primary transition-colors">Contact</a>
-          </li>
-        </ul>
+        <div id="mobile-menu" class="hidden fixed left-0 right-0 bg-white/95 dark:bg-gray-900/95 backdrop-blur-lg border-b border-gray-200 dark:border-gray-700 px-4 py-2">
+          <div class="overflow-x-auto">
+            <ul class="flex items-center space-x-6 whitespace-nowrap min-w-max py-1">
+              <li>
+                <a href="#home" class="px-3 py-2 text-sm font-medium hover:text-primary transition-colors rounded-full hover:bg-gray-100 dark:hover:bg-gray-800">Home</a>
+              </li>
+              <li>
+                <a href="#about" class="px-3 py-2 text-sm font-medium hover:text-primary transition-colors rounded-full hover:bg-gray-100 dark:hover:bg-gray-800">About</a>
+              </li>
+              <li>
+                <a href="#experience" class="px-3 py-2 text-sm font-medium hover:text-primary transition-colors rounded-full hover:bg-gray-100 dark:hover:bg-gray-800">Experience</a>
+              </li>
+              <li>
+                <a href="#skills" class="px-3 py-2 text-sm font-medium hover:text-primary transition-colors rounded-full hover:bg-gray-100 dark:hover:bg-gray-800">Skills</a>
+              </li>
+              <li>
+                <a href="#projects" class="px-3 py-2 text-sm font-medium hover:text-primary transition-colors rounded-full hover:bg-gray-100 dark:hover:bg-gray-800">Projects</a>
+              </li>
+              <li>
+                <a href="#contact" class="px-3 py-2 text-sm font-medium hover:text-primary transition-colors rounded-full hover:bg-gray-100 dark:hover:bg-gray-800">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </nav>
