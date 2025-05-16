@@ -1,4 +1,11 @@
 <?php
+// // Database connection
+// $servername = "localhost";
+// $username = "root";
+// $password = "";
+// $dbname = "contact_form";
+
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Get form data
     $name = strip_tags(trim($_POST["name"]));
@@ -16,23 +23,54 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $recipient = "byshubham6@gmail.com";
 
     // Set the email subject
-    $subject = "New contact from $name";
+    $subject = "New Contact Form Message from $name";
 
-    // Build the email content
-    $email_content = "Name: $name\n";
-    $email_content .= "Email: $email\n\n";
-    $email_content .= "Message:\n$message\n";
+    // Build the email content with HTML formatting
+    $email_content = "
+    <html>
+    <head>
+        <title>New Contact Form Message</title>
+    </head>
+    <body>
+        <h2>New Contact Form Message</h2>
+        <p><strong>Name:</strong> {$name}</p>
+        <p><strong>Email:</strong> {$email}</p>
+        <p><strong>Message:</strong></p>
+        <p>" . nl2br($message) . "</p>
+    </body>
+    </html>";
 
     // Build the email headers
-    $email_headers = "From: $name <$email>";
+    $headers = array(
+        'MIME-Version: 1.0',
+        'Content-type: text/html; charset=UTF-8',
+        'From: ' . $name . ' <' . $email . '>',
+        'Reply-To: ' . $email,
+        'X-Mailer: PHP/' . phpversion()
+    );
 
-    // Send the email
-    if (mail($recipient, $subject, $email_content, $email_headers)) {
-        http_response_code(200);
-        echo "Thank You! Your message has been sent.";
-    } else {
+    // Enable error reporting for debugging
+    error_reporting(E_ALL);
+    ini_set('display_errors', 1);
+
+    // Send the email with error handling
+    try {
+        if (mail($recipient, $subject, $email_content, implode("\r\n", $headers))) {
+            http_response_code(200);
+            echo "Thank You! Your message has been sent successfully.";
+            
+            // Log successful sending
+            error_log("Email sent successfully from $email to $recipient");
+        } else {
+            throw new Exception("Mail sending failed");
+        }
+    } catch (Exception $e) {
         http_response_code(500);
         echo "Oops! Something went wrong, we couldn't send your message.";
+        
+        // Log the error
+        error_log("Failed to send email: " . $e->getMessage());
+        error_log("From: $email, To: $recipient, Subject: $subject");
     }
 } else {
     http_response_code(403);
