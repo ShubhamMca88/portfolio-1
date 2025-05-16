@@ -135,26 +135,26 @@
     <div class="container mx-auto px-4 max-w-6xl">
       <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center max-w-5xl mx-auto">
         <div class="relative mt-8 sm:mt-0">
-          <div class="relative w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 mx-auto">
+          <div class="relative w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 lg:w-[450px] lg:h-[450px] mx-auto">
             <!-- Curved background shape -->
             <div class="absolute inset-0 bg-primary/90 rounded-[50%] scale-110 translate-x-2"></div>
             <!-- Dots pattern -->
-            <div class="absolute -right-6 -top-6 w-20 h-20 sm:w-24 sm:h-24 grid grid-cols-3 gap-2">
-              <div class="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-gray-200/30 rounded-full"></div>
-              <div class="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-gray-200/30 rounded-full"></div>
-              <div class="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-gray-200/30 rounded-full"></div>
-              <div class="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-gray-200/30 rounded-full"></div>
-              <div class="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-gray-200/30 rounded-full"></div>
-              <div class="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-gray-200/30 rounded-full"></div>
-              <div class="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-gray-200/30 rounded-full"></div>
-              <div class="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-gray-200/30 rounded-full"></div>
-              <div class="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-gray-200/30 rounded-full"></div>
+            <div class="absolute -right-8 -top-8 w-24 h-24 sm:w-32 sm:h-32 grid grid-cols-3 gap-2">
+              <div class="w-2 h-2 sm:w-3 sm:h-3 bg-gray-200/30 rounded-full"></div>
+              <div class="w-2 h-2 sm:w-3 sm:h-3 bg-gray-200/30 rounded-full"></div>
+              <div class="w-2 h-2 sm:w-3 sm:h-3 bg-gray-200/30 rounded-full"></div>
+              <div class="w-2 h-2 sm:w-3 sm:h-3 bg-gray-200/30 rounded-full"></div>
+              <div class="w-2 h-2 sm:w-3 sm:h-3 bg-gray-200/30 rounded-full"></div>
+              <div class="w-2 h-2 sm:w-3 sm:h-3 bg-gray-200/30 rounded-full"></div>
+              <div class="w-2 h-2 sm:w-3 sm:h-3 bg-gray-200/30 rounded-full"></div>
+              <div class="w-2 h-2 sm:w-3 sm:h-3 bg-gray-200/30 rounded-full"></div>
+              <div class="w-2 h-2 sm:w-3 sm:h-3 bg-gray-200/30 rounded-full"></div>
             </div>
             <!-- Navy accent shape -->
-            <div class="absolute -bottom-3 -left-3 w-24 h-24 sm:w-32 sm:h-32 bg-secondary/90 rounded-[40%] -rotate-12"></div>
+            <div class="absolute -bottom-4 -left-4 w-32 h-32 sm:w-40 sm:h-40 bg-secondary/90 rounded-[40%] -rotate-12"></div>
             <!-- Profile image -->
-            <img src="assets/img/profile/1.png" alt="Shubham - DevOps Engineer"
-              class="relative rounded-full w-full h-full object-cover shadow-xl">
+            <img src="assets/img/profile/h1.png" alt="Shubham - DevOps Engineer"
+              class="relative rounded-full w-full h-full object-cover shadow-xl hover:scale-105 transition-transform duration-300">
           </div>
           <div class="absolute top-0 right-0 bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-3 sm:p-4 transform rotate-12 hover:rotate-0 transition-transform duration-300">
             <span class="text-2xl sm:text-3xl font-bold text-primary">2+</span>
@@ -832,18 +832,22 @@
             </div>
           </div>
         </div>
-        <form id="contact-form" class="space-y-6">
+        <form id="contact-form" class="space-y-6" action="contact.php" method="POST">
           <div>
-            <input type="text" placeholder="Name" required
+            <input type="text" name="name" placeholder="Name" required
               class="w-full px-4 py-3 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all">
           </div>
           <div>
-            <input type="email" placeholder="Email" required
+            <input type="email" name="email" placeholder="Email" required
               class="w-full px-4 py-3 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all">
           </div>
           <div>
-            <textarea placeholder="Message" required rows="5"
+            <textarea name="message" placeholder="Message" required rows="5"
               class="w-full px-4 py-3 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all resize-none"></textarea>
+          </div>
+          <div id="form-status" class="text-center hidden">
+            <p class="success hidden text-green-500 font-medium">Thank you! Your message has been sent successfully.</p>
+            <p class="error hidden text-red-500 font-medium">Oops! There was a problem sending your message.</p>
           </div>
           <button type="submit"
             class="w-full px-6 py-3 bg-primary hover:bg-primary/90 text-white rounded-lg transition-colors shadow-lg hover:shadow-primary/20">
@@ -925,6 +929,44 @@
     mobileMenu.querySelectorAll('a').forEach(link => {
       link.addEventListener('click', () => {
         mobileMenu.classList.add('hidden');
+      });
+    });
+
+    // Contact Form Handling
+    const contactForm = document.getElementById('contact-form');
+    const formStatus = document.getElementById('form-status');
+    const successMessage = formStatus.querySelector('.success');
+    const errorMessage = formStatus.querySelector('.error');
+
+    contactForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      // Reset status messages
+      formStatus.classList.remove('hidden');
+      successMessage.classList.add('hidden');
+      errorMessage.classList.add('hidden');
+
+      // Get form data
+      const formData = new FormData(this);
+      
+      // Send form data using fetch
+      fetch('contact.php', {
+        method: 'POST',
+        body: formData
+      })
+      .then(response => {
+        if (response.ok) {
+          return response.text();
+        }
+        throw new Error('Network response was not ok.');
+      })
+      .then(data => {
+        successMessage.classList.remove('hidden');
+        contactForm.reset();
+      })
+      .catch(error => {
+        errorMessage.classList.remove('hidden');
+        console.error('Error:', error);
       });
     });
   </script>
