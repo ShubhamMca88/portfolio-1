@@ -197,7 +197,7 @@
   </section>
 
   <!-- About Section -->
-  <section id="about" class="min-h-screen flex items-center bg-gradient-to-bl from-blue-50 via-white to-blue-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
+  <section id="about" class="min-h-screen flex items-center bg-gradient-to-bl from-blue-50 via-white to-blue-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 py-12">
     <div class="container mx-auto px-4 max-w-6xl">
       <h2 class="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">About Me</h2>
       <div class="grid lg:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
@@ -232,6 +232,10 @@
           <ul class="space-y-3 text-gray-600 dark:text-gray-300">
             <li class="flex items-center space-x-3">
               <i class="fas fa-check-circle text-primary"></i>
+              <span>AWS Cloud Services</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <i class="fas fa-check-circle text-primary"></i>
               <span>Cloud Infrastructure Design & Implementation</span>
             </li>
             <li class="flex items-center space-x-3">
@@ -263,7 +267,7 @@
   </section>
 
   <!-- Experience Section -->
-  <section id="experience" class="min-h-screen flex items-center bg-gradient-to-tr from-blue-50 via-white to-blue-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
+  <section id="experience" class="min-h-screen flex items-center bg-gradient-to-tr from-blue-50 via-white to-blue-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 py-12">
     <div class="container mx-auto px-4 max-w-6xl">
       <h2 class="text-4xl font-bold text-center bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent mb-12">Professional Experience</h2>
       <div class="max-w-4xl mx-auto space-y-12">
@@ -368,7 +372,7 @@
   </section>
 
   <!-- Skills Section -->
-  <section id="best-skills" class="min-h-screen flex items-center bg-gradient-to-tl from-blue-50 via-white to-blue-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
+  <section id="best-skills" class="min-h-screen flex items-center bg-gradient-to-tl from-blue-50 via-white to-blue-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 py-12">
     <div class="container mx-auto px-4 max-w-6xl">
       <h2
         class="text-4xl font-bold text-center bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">
@@ -500,7 +504,7 @@
   </section>
 
   <!-- Projects Section -->
-  <section id="projects" class="min-h-screen flex items-center bg-gradient-to-br from-blue-50 via-white to-blue-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
+  <section id="projects" class="min-h-screen flex items-center bg-gradient-to-br from-blue-50 via-white to-blue-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 py-12 ">
     <div class="container mx-auto px-4 max-w-6xl">
       <h2
         class="text-4xl font-bold text-center bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent mb-12">
@@ -509,14 +513,13 @@
         <!-- AWS Terraform Project -->
         <div class="bg-white dark:bg-gray-900 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 group">
           <div class="relative overflow-hidden rounded-t-2xl">
-            <img src="assets/img/projects/aws-terraform.png" alt="AWS Terraform Project" class="w-full h-48 object-cover transform group-hover:scale-110 transition-transform duration-500">
+            <img src="assets/img/project/aws-terraform.png" alt="AWS Terraform Project" class="w-full h-48 object-cover transform group-hover:scale-110 transition-transform duration-500">
             <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
           </div>
           <div class="p-6 space-y-4">
             <h3 class="text-xl font-semibold">AWS Infrastructure with Terraform</h3>
             <p class="text-gray-600 dark:text-gray-400">
-              Comprehensive AWS infrastructure deployment using Terraform, featuring VPC setup, auto-scaling EC2 instances, RDS databases, and S3 storage with proper security configurations.
-            </p>
+              Deployed a complete AWS infrastructure using Terraform, including VPC, auto-scaling EC2 instances, RDS database, and S3 storage, all with proper security settings.            </p>
             <div class="space-y-3">
               <h4 class="font-medium text-primary">Key Features:</h4>
               <ul class="text-sm text-gray-600 dark:text-gray-400 space-y-2">
@@ -541,61 +544,55 @@
               <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-primary rounded-full text-sm">CloudWatch</span>
             </div>
             <div class="flex space-x-4 pt-4">
-              <a href="https://github.com/ShubhamMca88/aws-terraform-infrastructure" target="_blank" class="flex items-center space-x-2 text-primary hover:text-primary/80 transition-colors">
+              <a href="https://github.com/ShubhamMca88" target="_blank" class="flex items-center space-x-2 text-primary hover:text-primary/80 transition-colors">
                 <i class="fab fa-github"></i>
                 <span>View Code</span>
               </a>
-              <button data-modal="aws-terraform-details" class="flex items-center space-x-2 text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">
-                <i class="fas fa-info-circle"></i>
-                <span>Details</span>
-              </button>
             </div>
           </div>
         </div>
 
-        <!-- Kubernetes Deployment Project -->
+        <!-- Application Deployment with AWS Amplify -->
         <div class="bg-white dark:bg-gray-900 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 group">
           <div class="relative overflow-hidden rounded-t-2xl">
-            <img src="assets/img/projects/kubernetes.png" alt="Kubernetes Deployment Project" class="w-full h-48 object-cover transform group-hover:scale-110 transition-transform duration-500">
+            <img src="assets/img/project/amplify.png" alt="Kubernetes Deployment Project" class="w-full h-48 object-cover transform group-hover:scale-110 transition-transform duration-500">
             <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
           </div>
           <div class="p-6 space-y-4">
-            <h3 class="text-xl font-semibold">Kubernetes Microservices Platform</h3>
+            <h3 class="text-xl font-semibold">Application Deploy with AWS Amplify</h3>
             <p class="text-gray-600 dark:text-gray-400">
-              Advanced microservices architecture deployed on Kubernetes with service mesh, monitoring, and automated scaling capabilities.
-            </p>
+              Deployed and managed full-stack web applications using AWS Amplify, enabling fast, secure, and scalable cloud hosting with built-in CI/CD and backend support.            </p>
             <div class="space-y-3">
               <h4 class="font-medium text-primary">Key Features:</h4>
               <ul class="text-sm text-gray-600 dark:text-gray-400 space-y-2">
                 <li class="flex items-start space-x-2">
                   <i class="fas fa-check text-primary mt-1"></i>
-                  <span>Istio service mesh integration</span>
+                  <span>Hosting for static websites and single-page applications (React, Angular, Vue)</span>
                 </li>
                 <li class="flex items-start space-x-2">
                   <i class="fas fa-check text-primary mt-1"></i>
-                  <span>Prometheus & Grafana monitoring</span>
+                  <span>Real-time data with AWS AppSync</span>
                 </li>
                 <li class="flex items-start space-x-2">
                   <i class="fas fa-check text-primary mt-1"></i>
-                  <span>Automated canary deployments</span>
+                  <span>Custom domain support with HTTPS</span>
+                </li>
+                <li class="flex items-start space-x-2">
+                  <i class="fas fa-check text-primary mt-1"></i>
+                  <span>Environment management</span>
                 </li>
               </ul>
             </div>
             <div class="flex flex-wrap gap-2">
-              <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-primary rounded-full text-sm">Kubernetes</span>
-              <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-primary rounded-full text-sm">Docker</span>
-              <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-primary rounded-full text-sm">Istio</span>
-              <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-primary rounded-full text-sm">Monitoring</span>
+              <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-primary rounded-full text-sm">Github</span>
+              <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-primary rounded-full text-sm">Amazon Cognito</span>
+              <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-primary rounded-full text-sm">Amazon S3 & CloudFront </span>
             </div>
             <div class="flex space-x-4 pt-4">
-              <a href="https://github.com/ShubhamMca88/k8s-microservices" target="_blank" class="flex items-center space-x-2 text-primary hover:text-primary/80 transition-colors">
+              <a href="https://github.com/ShubhamMca88" target="_blank" class="flex items-center space-x-2 text-primary hover:text-primary/80 transition-colors">
                 <i class="fab fa-github"></i>
                 <span>View Code</span>
               </a>
-              <button data-modal="k8s-details" class="flex items-center space-x-2 text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">
-                <i class="fas fa-info-circle"></i>
-                <span>Details</span>
-              </button>
             </div>
           </div>
         </div>
@@ -603,14 +600,13 @@
         <!-- CI/CD Pipeline Project -->
         <div class="bg-white dark:bg-gray-900 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 group">
           <div class="relative overflow-hidden rounded-t-2xl">
-            <img src="assets/img/projects/cicd.png" alt="CI/CD Pipeline Project" class="w-full h-48 object-cover transform group-hover:scale-110 transition-transform duration-500">
+            <img src="/assets/img/project/cicd.png" alt="CI/CD Pipeline Project" class="w-full h-48 object-cover transform group-hover:scale-110 transition-transform duration-500">
             <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
           </div>
           <div class="p-6 space-y-4">
-            <h3 class="text-xl font-semibold">Advanced CI/CD Pipeline</h3>
+            <h3 class="text-xl font-semibold">Github actions CI/CD Pipeline</h3>
             <p class="text-gray-600 dark:text-gray-400">
-              Sophisticated CI/CD pipeline with automated testing, security scanning, and multi-environment deployments using Jenkins and AWS.
-            </p>
+              Developed a robust CI/CD pipeline using Jenkins , Github actions and AWS, featuring automated testing, security checks, and seamless deployments across multiple environments.</p>
             <div class="space-y-3">
               <h4 class="font-medium text-primary">Key Features:</h4>
               <ul class="text-sm text-gray-600 dark:text-gray-400 space-y-2">
@@ -635,14 +631,10 @@
               <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-primary rounded-full text-sm">Security</span>
             </div>
             <div class="flex space-x-4 pt-4">
-              <a href="https://github.com/ShubhamMca88/cicd-pipeline" target="_blank" class="flex items-center space-x-2 text-primary hover:text-primary/80 transition-colors">
+              <a href="https://github.com/ShubhamMca88" target="_blank" class="flex items-center space-x-2 text-primary hover:text-primary/80 transition-colors">
                 <i class="fab fa-github"></i>
                 <span>View Code</span>
               </a>
-              <button data-modal="cicd-details" class="flex items-center space-x-2 text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">
-                <i class="fas fa-info-circle"></i>
-                <span>Details</span>
-              </button>
             </div>
           </div>
         </div>
@@ -650,226 +642,153 @@
         <!-- Cloud Monitoring Project -->
         <div class="bg-white dark:bg-gray-900 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 group">
           <div class="relative overflow-hidden rounded-t-2xl">
-            <img src="assets/img/projects/monitoring.png" alt="Cloud Monitoring Project"
+            <img src="/assets/img/project/cloud-monitoring.png" alt="Cloud Monitoring Project"
               class="w-full h-48 object-cover transform group-hover:scale-110 transition-transform duration-500">
             <div
               class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             </div>
           </div>
           <div class="p-6 space-y-4">
-            <h3 class="text-xl font-semibold">Cloud Monitoring System</h3>
+            <h3 class="text-xl font-semibold">Cloud Monitoring System tools</h3>
             <p class="text-gray-600 dark:text-gray-400">
-              Comprehensive monitoring solution using Prometheus, Grafana, and ELK stack for cloud infrastructure.
-            </p>
+              Set up a complete monitoring system using Prometheus, Grafana, and ELK Stack to track performance, logs, and metrics across the cloud infrastructure.</p>
+              <div class="space-y-3">
+                <h4 class="font-medium text-primary">Key Features:</h4>
+                <ul class="text-sm text-gray-600 dark:text-gray-400 space-y-2">
+                  <li class="flex items-start space-x-2">
+                    <i class="fas fa-check text-primary mt-1"></i>
+                    <span>Real-time metrics tracking</span>
+                  </li>
+                  <li class="flex items-start space-x-2">
+                    <i class="fas fa-check text-primary mt-1"></i>
+                    <span>Custom Grafana dashboards</span>
+                  </li>
+                  <li class="flex items-start space-x-2">
+                    <i class="fas fa-check text-primary mt-1"></i>
+                    <span>Alerts for system issues</span>
+                  </li>
+                  <li class="flex items-start space-x-2">
+                    <i class="fas fa-check text-primary mt-1"></i>
+                    <span>Easy troubleshooting across cloud services</span>
+                  </li>
+                  <li class="flex items-start space-x-2">
+                    <i class="fas fa-check text-primary mt-1"></i>
+                    <span>Centralized log collection</span>
+                  </li>
+                  <li class="flex items-start space-x-2">
+                    <i class="fas fa-check text-primary mt-1"></i>
+                    <span>Monitoring usage(CPU, memory, disk, etc.)</span>
+                  </li>
+                </ul>
+              </div>
             <div class="flex flex-wrap gap-2">
               <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-primary rounded-full text-sm">Prometheus</span>
               <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-primary rounded-full text-sm">Grafana</span>
               <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-primary rounded-full text-sm">ELK</span>
             </div>
             <div class="flex space-x-4 pt-4">
-              <a href="https://github.com/ShubhamMca88/cloud-monitoring" target="_blank"
+              <a href="https://github.com/ShubhamMca88" target="_blank"
                 class="flex items-center space-x-2 text-primary hover:text-primary/80 transition-colors">
                 <i class="fab fa-github"></i>
                 <span>View Code</span>
               </a>
-              <button data-modal="monitoring-details"
-                class="flex items-center space-x-2 text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">
-                <i class="fas fa-info-circle"></i>
-                <span>Details</span>
-              </button>
             </div>
           </div>
         </div>
 
-        <!-- Security Automation Project -->
+        <!-- Serverless Deployment with AWS services -->
         <div class="bg-white dark:bg-gray-900 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 group">
           <div class="relative overflow-hidden rounded-t-2xl">
-            <img src="assets/img/projects/security.png" alt="Security Automation Project"
-              class="w-full h-48 object-cover transform group-hover:scale-110 transition-transform duration-500">
-            <div
-              class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            </div>
+            <img src="assets/img/project/serverless.png" alt="Kubernetes Deployment Project" class="w-full h-48 object-cover transform group-hover:scale-110 transition-transform duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
           </div>
           <div class="p-6 space-y-4">
-            <h3 class="text-xl font-semibold">Security Automation</h3>
+            <h3 class="text-xl font-semibold">Serverless Deployment with AWS services</h3>
             <p class="text-gray-600 dark:text-gray-400">
-              Automated security scanning and compliance checking for cloud infrastructure using various tools.
-            </p>
+              Deployed a fully serverless application on AWS, enabling scalable, cost-effective, and maintenance-free backend architecture using AWS services.            </p>
+            <div class="space-y-3">
+              <h4 class="font-medium text-primary">Key Features:</h4>
+              <ul class="text-sm text-gray-600 dark:text-gray-400 space-y-2">
+                <li class="flex items-start space-x-2">
+                  <i class="fas fa-check text-primary mt-1"></i>
+                  <span>Static frontend hosting via Amazon S3 + CloudFront</span>
+                </li>
+                <li class="flex items-start space-x-2">
+                  <i class="fas fa-check text-primary mt-1"></i>
+                  <span>Fast deployment and zero server management</span>
+                </li>
+                <li class="flex items-start space-x-2">
+                  <i class="fas fa-check text-primary mt-1"></i>
+                  <span>Business logic handled with AWS Lambda functions</span>
+                </li>
+                <li class="flex items-start space-x-2">
+                  <i class="fas fa-check text-primary mt-1"></i>
+                  <span>Secure access control using IAM roles and policies</span>
+                </li>
+              </ul>
+            </div>
             <div class="flex flex-wrap gap-2">
-              <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-primary rounded-full text-sm">Python</span>
-              <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-primary rounded-full text-sm">AWS</span>
-              <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-primary rounded-full text-sm">Security</span>
+              <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-primary rounded-full text-sm">Lambda</span>
+              <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-primary rounded-full text-sm">S3</span>
+              <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-primary rounded-full text-sm">CloudFront</span>
+              <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-primary rounded-full text-sm">IAM</span>
+              <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-primary rounded-full text-sm">AWS CloudWatch</span>
             </div>
             <div class="flex space-x-4 pt-4">
-              <a href="https://github.com/ShubhamMca88/security-automation" target="_blank"
-                class="flex items-center space-x-2 text-primary hover:text-primary/80 transition-colors">
+              <a href="https://github.com/ShubhamMca88" target="_blank" class="flex items-center space-x-2 text-primary hover:text-primary/80 transition-colors">
                 <i class="fab fa-github"></i>
                 <span>View Code</span>
               </a>
-              <button data-modal="security-details"
-                class="flex items-center space-x-2 text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">
-                <i class="fas fa-info-circle"></i>
-                <span>Details</span>
-              </button>
             </div>
           </div>
         </div>
 
-        <!-- Infrastructure Scaling Project -->
+        <!-- Kubernetes Deployment Project -->
         <div class="bg-white dark:bg-gray-900 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 group">
           <div class="relative overflow-hidden rounded-t-2xl">
-            <img src="assets/img/projects/scaling.png" alt="Infrastructure Scaling Project"
-              class="w-full h-48 object-cover transform group-hover:scale-110 transition-transform duration-500">
-            <div
-              class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            </div>
+            <img src="assets/img/project/k8s.png" alt="Kubernetes Deployment Project" class="w-full h-48 object-cover transform group-hover:scale-110 transition-transform duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
           </div>
           <div class="p-6 space-y-4">
-            <h3 class="text-xl font-semibold">Auto-Scaling Infrastructure</h3>
+            <h3 class="text-xl font-semibold">Kubernetes Microservices Platform</h3>
             <p class="text-gray-600 dark:text-gray-400">
-              Automated scaling solution for cloud infrastructure using AWS Auto Scaling and custom metrics.
-            </p>
+              Designed and deployed a microservices architecture on Kubernetes with service mesh, monitoring, and auto-scaling features.            </p>
+            <div class="space-y-3">
+              <h4 class="font-medium text-primary">Key Features:</h4>
+              <ul class="text-sm text-gray-600 dark:text-gray-400 space-y-2">
+                <li class="flex items-start space-x-2">
+                  <i class="fas fa-check text-primary mt-1"></i>
+                  <span>Integrated Istio for service mesh and traffic control</span>
+                </li>
+                <li class="flex items-start space-x-2">
+                  <i class="fas fa-check text-primary mt-1"></i>
+                  <span>Prometheus & Grafana monitoring</span>
+                </li>
+                <li class="flex items-start space-x-2">
+                  <i class="fas fa-check text-primary mt-1"></i>
+                  <span>Automated canary deployments</span>
+                </li>
+                <li class="flex items-start space-x-2">
+                  <i class="fas fa-check text-primary mt-1"></i>
+                  <span>Auto-scaling groups with custom metrics</span>
+                </li>
+                <li class="flex items-start space-x-2">
+                  <i class="fas fa-check text-primary mt-1"></i>
+                  <span>Used Docker for containerization and Kubernetes for orchestration</span>
+                </li>
+              </ul>
+            </div>
             <div class="flex flex-wrap gap-2">
-              <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-primary rounded-full text-sm">AWS</span>
-              <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-primary rounded-full text-sm">Python</span>
-              <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-primary rounded-full text-sm">Scaling</span>
+              <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-primary rounded-full text-sm">Kubernetes</span>
+              <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-primary rounded-full text-sm">Docker</span>
+              <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-primary rounded-full text-sm">Istio</span>
+              <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-primary rounded-full text-sm">Monitoring</span>
             </div>
             <div class="flex space-x-4 pt-4">
-              <a href="https://github.com/ShubhamMca88/auto-scaling" target="_blank"
-                class="flex items-center space-x-2 text-primary hover:text-primary/80 transition-colors">
+              <a href="https://github.com/ShubhamMca88" target="_blank" class="flex items-center space-x-2 text-primary hover:text-primary/80 transition-colors">
                 <i class="fab fa-github"></i>
                 <span>View Code</span>
               </a>
-              <button data-modal="scaling-details"
-                class="flex items-center space-x-2 text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">
-                <i class="fas fa-info-circle"></i>
-                <span>Details</span>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Project Modals -->
-    <div id="aws-terraform-details" class="fixed inset-0 z-50 overflow-y-auto hidden">
-      <div class="min-h-screen px-4 text-center">
-        <div class="fixed inset-0 bg-black/50 transition-opacity"></div>
-        <div
-          class="inline-block w-full max-w-2xl my-8 p-6 overflow-hidden text-left align-middle bg-white dark:bg-gray-900 rounded-2xl shadow-xl transform transition-all">
-          <div class="absolute top-4 right-4">
-            <button class="close text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200">
-              <i class="fas fa-times text-xl"></i>
-            </button>
-          </div>
-          <h2 class="text-2xl font-bold mb-6">AWS Infrastructure with Terraform</h2>
-          <div class="space-y-6">
-            <div>
-              <h3 class="text-xl font-semibold mb-2">Project Overview</h3>
-              <p class="text-gray-600 dark:text-gray-400">
-                This project demonstrates the implementation of Infrastructure as Code (IaC) using Terraform to
-                provision
-                and manage AWS resources in a scalable and maintainable way.
-              </p>
-            </div>
-
-            <div>
-              <h3 class="text-xl font-semibold mb-2">Key Features</h3>
-              <ul class="list-disc list-inside space-y-2 text-gray-600 dark:text-gray-400">
-                <li>VPC setup with public and private subnets</li>
-                <li>Auto Scaling EC2 instances with custom AMI</li>
-                <li>RDS database in private subnet</li>
-                <li>S3 bucket for static assets</li>
-                <li>Security groups and IAM roles</li>
-                <li>CloudWatch monitoring and alerts</li>
-              </ul>
-            </div>
-
-            <div>
-              <h3 class="text-xl font-semibold mb-2">Technical Details</h3>
-              <p class="text-gray-600 dark:text-gray-400 mb-2">The infrastructure is defined using Terraform modules for
-                better code organization and reusability:</p>
-              <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded-lg overflow-x-auto"><code>
-project/
-├── modules/
-│   ├── vpc/
-│   ├── ec2/
-│   ├── rds/
-│   └── s3/
-├── environments/
-│   ├── dev/
-│   ├── staging/
-│   └── prod/
-├── variables.tf
-├── outputs.tf
-└── main.tf
-              </code></pre>
-            </div>
-
-            <div>
-              <h3 class="text-xl font-semibold mb-2">Implementation</h3>
-              <p class="text-gray-600 dark:text-gray-400">
-                The infrastructure is deployed using Terraform workspaces for different environments. State files are
-                stored
-                in an S3 backend with DynamoDB for state locking.
-              </p>
-            </div>
-
-            <div class="flex justify-end mt-6">
-              <a href="https://github.com/ShubhamMca88/aws-terraform-infrastructure" target="_blank"
-                class="inline-flex items-center space-x-2 px-6 py-3 bg-primary hover:bg-primary/90 text-white rounded-lg transition-colors">
-                <i class="fab fa-github"></i>
-                <span>View on GitHub</span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div id="k8s-details" class="fixed inset-0 z-50 overflow-y-auto hidden">
-      <div class="min-h-screen px-4 text-center">
-        <div class="fixed inset-0 bg-black/50 transition-opacity"></div>
-        <div
-          class="inline-block w-full max-w-2xl my-8 p-6 overflow-hidden text-left align-middle bg-white dark:bg-gray-900 rounded-2xl shadow-xl transform transition-all">
-          <div class="absolute top-4 right-4">
-            <button class="close text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200">
-              <i class="fas fa-times text-xl"></i>
-            </button>
-          </div>
-          <h2 class="text-2xl font-bold mb-6">Kubernetes Microservices</h2>
-          <div class="space-y-6">
-            <div>
-              <h3 class="text-xl font-semibold mb-2">Project Overview</h3>
-              <p class="text-gray-600 dark:text-gray-400">
-                A complete microservices deployment solution using Kubernetes, featuring automated scaling, monitoring,
-                and
-                service mesh integration.
-              </p>
-            </div>
-
-            <div>
-              <h3 class="text-xl font-semibold mb-2">Key Features</h3>
-              <ul class="list-disc list-inside space-y-2 text-gray-600 dark:text-gray-400">
-                <li>Microservices architecture with service mesh</li>
-                <li>Automated deployment pipelines</li>
-                <li>Horizontal Pod Autoscaling</li>
-                <li>Service discovery and load balancing</li>
-                <li>Monitoring and logging integration</li>
-                <li>Zero-downtime deployments</li>
-              </ul>
-            </div>
-
-            <div>
-              <h3 class="text-xl font-semibold mb-2">Technologies Used</h3>
-              <ul class="list-disc list-inside space-y-2 text-gray-600 dark:text-gray-400">
-                <li>Kubernetes</li>
-                <li>Docker</li>
-                <li>Istio</li>
-                <li>Prometheus & Grafana</li>
-                <li>ELK Stack</li>
-                <li>GitHub Actions</li>
-              </ul>
             </div>
           </div>
         </div>
